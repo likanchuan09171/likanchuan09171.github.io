@@ -3,146 +3,203 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>LensWalk Links</title>
     <meta
       name="description"
-      content="Stable LensWalk resource links for paper, project page, and code."
+      content="LensWalk project page for CVPR 2026 Highlight: agentic video understanding by planning how to see in videos."
     />
-    <style>
-      :root {
-        color-scheme: light;
-        --navy: #082e70;
-        --blue: #1e63b7;
-        --ink: #0f172a;
-        --muted: #4b5b70;
-        --line: #c8d2e1;
-        --pale: #f8fafd;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: var(--ink);
-        background: linear-gradient(180deg, #f7fbff 0%, #ffffff 42%);
-      }
-      main {
-        width: min(980px, calc(100% - 40px));
-        margin: 0 auto;
-        padding: 56px 0 64px;
-      }
-      header {
-        border: 1px solid var(--line);
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.88);
-        padding: 28px 30px;
-      }
-      .venue {
-        margin: 0 0 8px;
-        color: var(--blue);
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0;
-        text-transform: uppercase;
-      }
-      h1 {
-        margin: 0;
-        color: var(--navy);
-        font-size: clamp(32px, 5vw, 52px);
-        line-height: 1.02;
-        letter-spacing: 0;
-      }
-      .subtitle {
-        max-width: 760px;
-        margin: 16px 0 0;
-        color: var(--muted);
-        font-size: 18px;
-        line-height: 1.55;
-      }
-      .links {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin-top: 26px;
-      }
-      a.card {
-        min-height: 150px;
-        padding: 20px;
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        background: #fff;
-        color: inherit;
-        text-decoration: none;
-        box-shadow: 0 10px 28px rgba(8, 46, 112, 0.08);
-      }
-      a.card:hover,
-      a.card:focus-visible {
-        outline: 2px solid rgba(30, 99, 183, 0.28);
-        border-color: var(--blue);
-      }
-      .label {
-        display: block;
-        color: var(--navy);
-        font-size: 20px;
-        font-weight: 700;
-      }
-      .url {
-        display: block;
-        margin-top: 12px;
-        color: var(--muted);
-        font-size: 13px;
-        line-height: 1.45;
-        overflow-wrap: anywhere;
-      }
-      footer {
-        margin-top: 22px;
-        color: var(--muted);
-        font-size: 13px;
-      }
-      @media (max-width: 720px) {
-        main {
-          width: min(100% - 28px, 980px);
-          padding-top: 28px;
-        }
-        header {
-          padding: 22px;
-        }
-        .links {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <title>LensWalk | Agentic Video Understanding</title>
+    <link rel="canonical" href="https://likanchuan09171.github.io/LensWalk/" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <p class="venue">CVPR 2026</p>
-        <h1>LensWalk Resource Links</h1>
-        <p class="subtitle">
-          Stable QR-code URLs for the LensWalk paper, project page, and code repository.
-          Each route can be retargeted later without changing the public URL.
-        </p>
-      </header>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="LensWalk home">LensWalk</a>
+      <nav aria-label="Project sections">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#dashboard">Tool Dashboard</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </header>
 
-      <section class="links" aria-label="Stable LensWalk links">
-        <a class="card" href="arxiv/">
-          <span class="label">Paper / arXiv</span>
-          <span class="url">https://likanchuan09171.github.io/LensWalk/arxiv/</span>
-        </a>
-        <a class="card" href="project/">
-          <span class="label">Project Page</span>
-          <span class="url">https://likanchuan09171.github.io/LensWalk/project/</span>
-        </a>
-        <a class="card" href="code/">
-          <span class="label">Code Repository</span>
-          <span class="url">https://likanchuan09171.github.io/LensWalk/code/</span>
-        </a>
+    <main id="top">
+      <section class="hero">
+        <p class="venue">CVPR 2026 Highlight</p>
+        <h1>LensWalk: Agentic Video Understanding by Planning How You See in Videos</h1>
+        <p class="authors">
+          Keliang Li, Yansong Li, Hongze Shen, Mengdi Liu, Hong Chang, Shiguang Shan
+        </p>
+        <p class="affiliations">
+          Institute of Computing Technology, CAS · Peng Cheng Laboratory · Hunan University · UCAS
+        </p>
+        <div class="resource-row" aria-label="Project resources">
+          <a class="button primary" href="assets/LensWalk_arxiv_2603.24558.pdf">Paper PDF</a>
+          <a class="button" href="https://arxiv.org/abs/2603.24558">arXiv</a>
+          <a class="button" href="https://github.com/likanchuan09171/LensWalk">Code</a>
+          <a class="button" href="#dashboard">Demo</a>
+        </div>
       </section>
 
-      <footer>
-        Redirect targets are defined inside each subpage's index.html file.
-      </footer>
+      <section id="overview" class="section">
+        <figure class="teaser">
+          <img
+            src="assets/intro.png"
+            alt="Comparison of single forward video understanding, passive retrieval agents, and LensWalk active observation."
+          />
+          <figcaption>
+            LensWalk gives the reasoner active control over where and how densely to observe the source video.
+          </figcaption>
+        </figure>
+        <div class="abstract-grid">
+          <div>
+            <p class="eyebrow">Abstract</p>
+            <h2>Reasoning controls perception.</h2>
+          </div>
+          <p>
+            Long videos are dense, temporal, and hard to compress into one fixed context. LensWalk frames video QA as a multi-turn reason-plan-observe loop: an LLM reasoner chooses temporal scope and sampling density, calls VLM-based observation tools, and uses timestamped evidence to refine later plans. Without model fine-tuning, LensWalk provides plug-and-play gains on long-video and video-reasoning benchmarks.
+          </p>
+        </div>
+      </section>
+
+      <section id="method" class="section split">
+        <div class="section-copy">
+          <p class="eyebrow">Method</p>
+          <h2>A compact tool set for active observation</h2>
+          <p>
+            The observation tool set exposes three complementary ways of seeing: broad parallel scans, dense local focus, and stitched cross-moment verification. Timestamp anchors and subject memory keep the multi-turn evidence grounded.
+          </p>
+          <div class="tool-summary" aria-label="LensWalk tools">
+            <article>
+              <strong>Scan Search</strong>
+              <span>Parallel coarse localization over a broad interval.</span>
+            </article>
+            <article>
+              <strong>Segment Focus</strong>
+              <span>Dense inspection of a selected continuous interval.</span>
+            </article>
+            <article>
+              <strong>Stitch Verify</strong>
+              <span>Joint observation of non-contiguous evidence moments.</span>
+            </article>
+          </div>
+        </div>
+        <div class="method-figures">
+          <figure class="method-figure workflow-figure">
+            <span>Workflow</span>
+            <img
+              src="assets/method_workflow.png"
+              alt="LensWalk reasoning-scheduled active observation with scan, segment, stitch, and subject memory."
+            />
+          </figure>
+          <figure class="method-figure toolset-figure">
+            <span>Tool Set</span>
+            <img
+              src="assets/observation_toolset.png"
+              alt="LensWalk observation tools: scan search, segment focus, and stitched verify."
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="dashboard" class="section dashboard-section">
+        <div class="section-heading">
+          <p class="eyebrow">Interactive Tool Dashboard</p>
+          <h2>Observer messages generated by each tool</h2>
+          <p>
+            The dashboard renders the user messages and video subsegments passed to the VLM observer for scan, focus, and stitch actions.
+          </p>
+        </div>
+
+        <div class="dashboard">
+          <aside class="control-panel">
+            <div class="tabs" role="tablist" aria-label="LensWalk observation tools">
+              <button class="active" type="button" role="tab" data-tool="scan" aria-selected="true">Scan</button>
+              <button type="button" role="tab" data-tool="focus" aria-selected="false">Focus</button>
+              <button type="button" role="tab" data-tool="stitch" aria-selected="false">Stitch</button>
+            </div>
+            <div id="tool-controls"></div>
+          </aside>
+
+          <section class="workspace" aria-label="Tool message preview">
+            <div class="workspace-head">
+              <div>
+                <span id="active-tool-name">scan_observer</span>
+                <h3 id="dashboard-title">Scan Search</h3>
+                <p id="dashboard-summary"></p>
+              </div>
+              <div class="duration-chip">NASA demo · 01:58</div>
+            </div>
+
+            <div class="media-grid">
+              <div class="video-shell">
+                <video id="demo-video" controls muted playsinline preload="metadata" poster="assets/demo_frames/f_0101.jpg">
+                  <source src="assets/demo_hubble_supernova.webm" type="video/webm" />
+                </video>
+              </div>
+
+              <div class="timeline-card">
+                <div id="timeline" class="timeline" aria-label="Video sampling timeline">
+                  <div class="track"></div>
+                  <div id="timeline-lanes"></div>
+                  <div id="timeline-dots"></div>
+                  <button id="handle-start" class="handle start" type="button" aria-label="Start time"></button>
+                  <button id="handle-end" class="handle end" type="button" aria-label="End time"></button>
+                </div>
+                <div class="time-labels">
+                  <span>00:00</span>
+                  <span>00:30</span>
+                  <span>01:00</span>
+                  <span>01:30</span>
+                  <span>01:58</span>
+                </div>
+              </div>
+            </div>
+
+            <div id="message-stack" class="message-stack" aria-live="polite"></div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section results-strip" aria-label="Result highlights">
+        <article>
+          <strong>Plug-and-play</strong>
+          <span>No model fine-tuning is required.</span>
+        </article>
+        <article>
+          <strong>Adaptive budget</strong>
+          <span>The reasoner allocates more frames only when evidence remains uncertain.</span>
+        </article>
+        <article>
+          <strong>Interpretable traces</strong>
+          <span>Tool calls expose when the agent scans, focuses, verifies, and finishes.</span>
+        </article>
+      </section>
+
+      <section id="citation" class="section citation">
+        <div>
+          <p class="eyebrow">Citation</p>
+          <h2>BibTeX</h2>
+        </div>
+        <pre>@inproceedings{li2026lenswalk,
+  title     = {LensWalk: Agentic Video Understanding by Planning How You See in Videos},
+  author    = {Li, Keliang and Li, Yansong and Shen, Hongze and Liu, Mengdi and Chang, Hong and Shan, Shiguang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2026}
+}</pre>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        Demo video source: NASA Goddard Space Flight Center / Wikimedia Commons public-domain video,
+        <a href="https://commons.wikimedia.org/wiki/File:Hubble_Captures_3_Faces_of_Evolving_Supernova_(SVS14239_SUPERNOVA_VERT_MP4).webm">Hubble Captures 3 Faces of Evolving Supernova</a>.
+        Page structure follows common academic project-page conventions inspired by
+        <a href="https://nerfies.github.io/">Nerfies</a>,
+        <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>,
+        and <a href="https://github.com/vinthony/project-page-template">YAAPPT</a>.
+      </p>
+    </footer>
+
+    <script src="main.js?v=20260603-stitch-selectable-global"></script>
   </body>
 </html>
